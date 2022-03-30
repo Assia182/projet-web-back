@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieParser());
   app.enableCors({
-    origin : ['https://beaute-de-l-orient.herokuapp.com/', 'https://beaute-de-lorient-back.herokuapp.com/', 'http://beaute-de-lorient-back.herokuapp.com/','http://localhost:3000','http://localhost:8000' ,'http://beaute-de-l-orient.herokuapp.com/'],
+    origin : ['http://beaute-de-lorient-back.herokuapp.com/','http://localhost:3000','http://localhost:8000' ,'http://beaute-de-l-orient.herokuapp.com/'],
     credentials : true,
   });
 
